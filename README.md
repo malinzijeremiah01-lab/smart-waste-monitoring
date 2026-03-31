@@ -55,5 +55,5 @@ void loop() {
     digitalWrite(buzzerPin, LOW);   // Turn OFF buzzer
   }
 
-  delay(500); // small delay
+  delay(1000); // small delay
 }
