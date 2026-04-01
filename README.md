@@ -1,3 +1,6 @@
+## Wokwi Simulation
+
+https://wokwi.com/projects/459550497732356097
 # smart-waste-monitoring
 IoT-based waste monitoring system for university
 // Smart Dustbin using Ultrasonic Sensor
