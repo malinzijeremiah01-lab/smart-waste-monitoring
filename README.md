@@ -25,9 +25,9 @@ void setup() {
 }
 
 void loop() {
-  // Trigger ultrasonic pulse
+  // Send ultrasonic pulse
   digitalWrite(trigPin, LOW);
-  delayMicroseconds(4);
+  delayMicroseconds(2);
 
   
   digitalWrite(trigPin, HIGH);
@@ -45,8 +45,8 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cm");
 
-  // Check if bin is full
-  if (distance >= 10) {
+  // Check bin status
+  if (distance <= threshold) {
     digitalWrite(ledPin, HIGH);     // Turn ON LED
     digitalWrite(buzzerPin, HIGH);  // Turn ON buzzer
     Serial.println("BIN FULL!");
