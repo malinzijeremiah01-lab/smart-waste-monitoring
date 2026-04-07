@@ -49,14 +49,7 @@ void loop() {
   Serial.println(" cm");
 
   // Check bin status
-  if (distance <= threshold) {
-    digitalWrite(ledPin, HIGH);     // Turn ON LED
-    digitalWrite(buzzerPin, HIGH);  // Turn ON buzzer
-    Serial.println("BIN FULL!");
-  } else {
-    digitalWrite(ledPin, LOW);      // Turn OFF LED
-    digitalWrite(buzzerPin, LOW);   // Turn OFF buzzer
-  }
+  
 
   delay(1000); // small delay
 }
