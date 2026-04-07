@@ -6,7 +6,10 @@ IoT-based waste monitoring system for university
 // Smart Dustbin using Ultrasonic Sensor
 
 // Pin definitions
-
+const int trigPin = 9;
+const int echoPin = 10;
+const int ledPin = 6;
+const int buzzerPin = 7;
 
 // Variables
 long duration;
