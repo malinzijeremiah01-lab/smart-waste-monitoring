@@ -48,7 +48,7 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cm");
 
-  
+  // Check bin status
   if (distance <= threshold) {
     digitalWrite(ledPin, HIGH);     // Turn ON LED
     digitalWrite(buzzerPin, HIGH);  // Turn ON buzzer
