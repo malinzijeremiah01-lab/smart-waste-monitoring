@@ -5,7 +5,7 @@ https://wokwi.com/projects/459550497732356097
 IoT-based waste monitoring system for university
 // Smart Dustbin using Ultrasonic Sensor
 
-// Pin definitions
+
 const int trigPin = 9;
 const int echoPin = 10;
 const int ledPin = 6;
