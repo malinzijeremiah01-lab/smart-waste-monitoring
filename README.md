@@ -54,7 +54,7 @@ fillLevel = constrain(fillLevel, 0, 100);
 Serial.print("Fill Level: ");
 Serial.print(fillLevel);
 Serial.println("%");
-  
+
   // Check bin status
   if (distance <= threshold) {
     digitalWrite(ledPin, HIGH);     // Turn ON LED
