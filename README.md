@@ -18,6 +18,8 @@ int distance;
 // Set threshold (in cm)
 int threshold = 10; // Adjust depending on bin size
 
+bool hasBeeped = false; // ensures buzzer beeps only once
+
 void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
