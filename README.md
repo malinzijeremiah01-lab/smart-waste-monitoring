@@ -48,6 +48,13 @@ void loop() {
   Serial.print(distance);
   Serial.println(" cm");
 
+ int fillLevel = ((binHeight - distance) * 100) / binHeight;
+fillLevel = constrain(fillLevel, 0, 100);
+
+Serial.print("Fill Level: ");
+Serial.print(fillLevel);
+Serial.println("%");
+  
   // Check bin status
   if (distance <= threshold) {
     digitalWrite(ledPin, HIGH);     // Turn ON LED
